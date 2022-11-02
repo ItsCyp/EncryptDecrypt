@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="parent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ccyprian.encryptdecrypt.Controller">
+   <children>
+      <VBox alignment="CENTER" prefHeight="75.0" prefWidth="600.0">
+         <children>
+            <Label text="Encrypt - Decrypt">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="262.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <TextField fx:id="decryptedText" prefHeight="25.0" prefWidth="400.0" promptText="Decrypted Text" styleClass="field" />
+            <TextArea fx:id="encryptedText" editable="false" prefHeight="150.0" prefWidth="400.0" promptText="Encrypted Text" styleClass="field2" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="encryptButton" mnemonicParsing="false" prefWidth="60.0" text="Ok" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
